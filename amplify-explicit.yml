@@ -1,10 +1,11 @@
 version: 1.0
+
 frontend:
   phases:
     preBuild:
       commands:
         - npm install --quiet --global expo-cli
-        - >
+        - |
           if [ -f yarn.lock ]; then
             yarn
           elif [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
@@ -23,3 +24,4 @@ frontend:
     paths:
       - node_modules/**/*
       - $(npm root --global)/**/*
+
