@@ -1,29 +1,33 @@
 import React from 'react'
-import {View,StyleSheet} from 'react-native'
-import { Input } from '@rneui/themed';
+
+import {View,SafeAreaView, StyleSheet, TextInput} from 'react-native';
 
 function GlobalInput({placeholder,ifpassword}){
     const text = placeholder.toString();
     let content 
-    if(ifpassword == null){
-        content = <Input placeholder={text} />
+    if(ifpassword == false){
+        content = <View style= {styles.container} ><TextInput style= {styles.containerStyle} placeholder={text} /></View>
     }
-    else if(ifpassword != null){
-        content = <Input placeholder = {text} secureTextEntry = {true}/>
+    else{
+        content = <TextInput style= {styles.containerStyle} placeholder = {text} secureTextEntry = {true}/>
     }
     return <View>{content}</View>
 }
 
 styles = StyleSheet.create({
+    container:{
+        
+    },
     buttonStyle: {
         borderRadius:10,
         
     }, 
     containerStyle:{
+        borderBottomWidth:1,
         marginHorizontal: 10,
-        height: 50,
+        height: 60,
         width: 250,
-        marginVertical: 10,
+       
       },
 
 });
