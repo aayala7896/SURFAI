@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Platform,SafeAreaView} from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { Button, lightColors, createTheme, ThemeProvider } from '@rneui/themed';
 import GlobalButton from './components/button.jsx'
 import GlobalInput from './components/textform.jsx'
