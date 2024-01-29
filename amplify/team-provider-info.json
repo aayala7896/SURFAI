@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-surfai-dev-201958-authRole",
+      "UnauthRoleArn": "arn:aws:iam::996145443336:role/amplify-surfai-dev-201958-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::996145443336:role/amplify-surfai-dev-201958-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-surfai-dev-201958-deployment",
+      "UnauthRoleName": "amplify-surfai-dev-201958-unauthRole",
+      "StackName": "amplify-surfai-dev-201958",
+      "StackId": "arn:aws:cloudformation:us-east-1:996145443336:stack/amplify-surfai-dev-201958/abe59590-be5d-11ee-aefd-0e1af9781195",
+      "AmplifyAppId": "d38gmmnox9qs7h"
+    }
+  }
+}
