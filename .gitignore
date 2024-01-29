@@ -6,7 +6,7 @@
 # Expo
 /.expo/
 /web-build/
-
+dist/
 # Native
 *.orig.*
 *.jks
